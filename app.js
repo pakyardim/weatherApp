@@ -6,13 +6,12 @@ const dateTxt = document.querySelector(".date");
 
 const api = {
   key: "e150c33f72106b91284591fc174acb3a",
-  base: "http://api.openweathermap.org/data/2.5/"
+  base: "https://api.openweathermap.org/data/2.5/"
 };
 
 searchbox.addEventListener('keypress', (e) => {
   if (e.keyCode == 13) {
     getResults(searchbox.value);
-    console.log(searchbox.value);
     e.currentTarget.value = "";
   }
 });
